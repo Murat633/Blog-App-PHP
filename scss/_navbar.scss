@@ -1,0 +1,102 @@
+$light: #fff;
+$dark: #1b263b;
+$primary : #4f6de2;
+$yellow : #e1d600;
+
+
+.navbar {
+    box-shadow: 0 0 10px 3px #000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2rem 0;
+    margin-bottom: .3rem;
+    margin-bottom: 1rem;
+
+    .logo-box {
+        font-size: 1.7rem;
+        color: $light;
+        cursor: pointer;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .links__item {
+            padding: 1rem 2rem;
+            position: relative;
+            cursor: pointer;
+            color: $light;
+
+            &.toggle.active {
+                background-color: $dark;
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            &:hover {
+                background-color: $dark
+            }
+
+            &:hover a {
+                color: $light;
+            }
+
+            .item__link {
+                color: $light;
+                font-weight: 900;
+
+                &.active .toggle-list {
+                    display: inline-block;
+                }
+            }
+
+            &.active .toggle-list {
+                display: inline-block;
+            }
+
+
+
+            .toggle-list {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                width: 200px;
+                background: rgba($color: $dark, $alpha: .6);
+                padding: .3rem;
+                display: none;
+
+                .toggle-list__list-item {
+                    width: 100%;
+                }
+
+
+
+                .list-item__link {
+                    color: $light;
+                    padding: 1rem;
+                    width: 100%;
+                    display: inline-block;
+                    background-color: $dark;
+                    border-bottom: 1px solid transparent;
+                    transition: all .4s;
+
+                    &:hover {
+                        border-bottom: 1px solid $light;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+
+}

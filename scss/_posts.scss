@@ -1,0 +1,140 @@
+//FREDOKA ONE FONT
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+// OPENSANS FONT
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600;1,700&display=swap');
+
+
+.blog-posts {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: 'Open Sans', cursive;
+    gap: 1rem;
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        font-size: .9rem;
+        gap: .3rem;
+        flex: .2;
+        box-shadow: 3px 3px 5px 1px #333;
+        padding: .5rem;
+        justify-content: space-between;
+
+
+        // POST HEADER
+        &__header {
+            width: 100%;
+            background-color: #fff;
+            position: relative;
+            transition: all 1s;
+            text-align: center;
+
+
+
+            &::after {
+                position: absolute;
+                content: "";
+                display: none;
+                top: 0;
+                left: 0;
+                background-color: rgba($color: #000, $alpha: 0);
+                width: 100%;
+                transition: all 1s;
+                height: 100%;
+            }
+
+            &:hover::after {
+                display: block;
+            }
+
+            &__img {
+                width: 100%;
+                max-height: 300px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom: 1px solid rgba($color: #333, $alpha: .3);
+                padding-bottom: 1rem;
+            }
+        }
+
+        //POST CONTENT
+        &__content {
+            background-color: #fff;
+
+
+            &__title {
+                border-radius: 5px;
+                color: #333;
+                padding: .5rem;
+            }
+
+            &__description {
+                background: darken(#fff, 2%);
+                height: 100%;
+                padding: 1rem;
+                font-weight: 900;
+                letter-spacing: 1px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+        }
+
+        //POST FOOTER
+        &__footer {
+            background-color: #fff;
+            color: #fff;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            grid-column: 1/span 2;
+
+            span,
+            button {
+                color: #fff;
+            }
+
+            button {
+                background-color: #e63946;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                padding: .5rem;
+                transition: all .3s;
+                height: 100%;
+
+                &:active {
+                    background-color: #333;
+                    color: #fff;
+                }
+            }
+
+            &__info {
+                display: flex;
+                gap: .7rem;
+                padding: .3rem;
+                flex-direction: column;
+
+                div {
+                    padding: .3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    word-wrap: break-word;
+                    gap: 4px;
+                }
+
+                .date {
+                    background-color: #e63946;
+                }
+
+                .author {
+                    background-color: #0081B4;
+                }
+
+                .category {
+                    background-color: #6F1AB6;
+                }
+
+            }
+        }
+    }
+}

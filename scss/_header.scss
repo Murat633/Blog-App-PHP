@@ -1,0 +1,70 @@
+.header {
+    height: 50vh;
+
+    &__popular-posts {
+        background-color: #333;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            align-items: center;
+            justify-content: center;
+            gap: .3rem;
+            height: 100%;
+            width: 100%;
+
+            .x2 {
+                display: flex;
+                flex-direction: column;
+                grid-row: 1 /span 2;
+                background-color: #900;
+                height: 100%;
+
+                .post {
+                    flex: 1;
+                }
+            }
+
+            .post {
+                background-color: #fff;
+                padding: 2rem;
+                height: 100%;
+                position: relative;
+                grid-row: 1/span 2;
+                z-index: 2;
+                color: #fff;
+
+                &:hover::after {
+                    background-color: rgba($color: #333, $alpha: .9);
+                }
+
+
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    background-color: rgba($color: #333, $alpha: .5);
+                }
+            }
+
+            .post:nth-child(3) {
+                grid-row: 1;
+            }
+
+            .post:nth-child(4) {
+                grid-row: 2;
+                grid-column: 3;
+            }
+        }
+    }
+}

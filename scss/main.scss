@@ -1,0 +1,28 @@
+@import 'aside';
+@import 'base';
+@import 'footer';
+@import 'header';
+@import 'navbar';
+@import 'posts';
+@import 'blog-details';
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}

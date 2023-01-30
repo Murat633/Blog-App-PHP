@@ -1,0 +1,39 @@
+.admin-navbar {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(23, 24, 32);
+    width: 15%;
+
+    .admin-links {
+        width: 100%;
+
+        li {
+            display: flex;
+            border-bottom: 1px solid rgba($color: #fff, $alpha: .3);
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            color: #fff;
+            padding: 0 .5rem;
+
+            &:hover {
+                background-color: darken(rgb(24, 25, 33), 20%);
+            }
+
+            &:active {
+                background-color: lighten(rgb(24, 25, 33), 3%);
+            }
+
+            a {
+                color: #fff;
+                padding: .5rem 1rem;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
