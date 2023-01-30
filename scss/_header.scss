@@ -38,9 +38,51 @@
                 grid-row: 1/span 2;
                 z-index: 2;
                 color: #fff;
+                position: relative;
+
+                &__link {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+
+
+                &__img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -2;
+                    vertical-align: middle;
+                }
+
+                &__content {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 3rem 1rem;
+                    color: #fff;
+                    font-size: 1.4rem;
+
+                    .post__title {
+                        font-size: 2rem;
+                        text-transform: capitalize;
+                        margin-bottom: 1rem;
+                        color: #fff;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
 
                 &:hover::after {
-                    background-color: rgba($color: #333, $alpha: .9);
+                    background-color: rgba($color: #333, $alpha: .7);
                 }
 
 
@@ -52,6 +94,7 @@
                     left: 0;
                     width: 100%;
                     height: 100%;
+                    transition: all .3s;
                     z-index: -1;
                     background-color: rgba($color: #333, $alpha: .5);
                 }

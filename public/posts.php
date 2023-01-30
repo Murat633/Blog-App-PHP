@@ -19,7 +19,7 @@ $categories = $db->getAll("category");
         
                 <div class="post__content">
                     <h3 class="post__content__title"><?php echo $blog["title"]?></h3>
-                    <p class="post__content__description"><?php echo $blog["description"]?></p>
+                    <p class="post__content__description"><?php echo substr($blog["description"],0,170)?></p>
                 </div>
                 <footer class="post__footer">
                     <div class="post__footer__info">

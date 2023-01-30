@@ -57,7 +57,7 @@
                             <th class="table-col">#ID</th>
                             <th class="table-col">Img</th>
                             <th class="table-col">Title</th>
-                            <th class="table-col">Description</th>
+                            <th class="table-col">Views</th>
                             <th class="table-col">Category ID</th>
                             <th class="table-col">Author ID</th>
                             <th class="table-col">Author</th>
@@ -72,7 +72,7 @@
                                 <img src="../<?php echo $blog["img"];?>" width="100" alt="<?php echo $blog["title"];?>" title="<?php echo $blog["title"];?>">
                             </th>
                             <th class="table-col"><?php echo $blog["title"];?></th>
-                            <th class="table-col"><?php echo $blog["description"];?></th>
+                            <th class="table-col"><?php echo $blog["views"];?></th>
                             <th class="table-col"><?php echo $blog["categoryid"];?></th>
                             <th class="table-col"><?php echo $blog["authorid"];?></th>
                             <th class="table-col"><?php echo $blog["author"];?></th>

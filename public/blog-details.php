@@ -18,6 +18,8 @@
             'id'=>$id,
             'views' => $blog["views"]+1
         ]);
+    }else{
+        setcookie("$session", "7987987",time()*100);
     }
 
     ?>
