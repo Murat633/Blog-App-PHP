@@ -6,13 +6,11 @@ $yellow : #e1d600;
 
 .navbar {
     box-shadow: 0 0 10px 3px #000;
-    background: #fff;
     display: flex;
+    background: $dark;
     align-items: center;
     justify-content: space-between;
-    padding: .2rem 0;
-    margin-bottom: .3rem;
-    margin-bottom: 1rem;
+    padding: .5rem 1rem;
 
     .logo-box {
         font-size: 1.7rem;
@@ -27,25 +25,35 @@ $yellow : #e1d600;
 
 
         .links__item {
-            padding: 1rem 2rem;
+            padding: .5rem 3rem;
             position: relative;
             cursor: pointer;
             color: $light;
 
             &.toggle.active {
                 background-color: $dark;
+                z-index: 999999;
+                width: 100%;
 
                 a {
-                    color: #fff;
+                    color: $light;
+                    background-color: $dark;
+                    text-align: center;
+
+                    &:hover {
+                        color: $light;
+                        background-color: $dark;
+                    }
                 }
             }
 
             &:hover {
-                background-color: $dark
+                background-color: $light;
+
             }
 
             &:hover a {
-                color: $light;
+                color: $dark;
             }
 
             .item__link {

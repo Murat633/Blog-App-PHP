@@ -12,6 +12,8 @@
         <?php include "posts.php"; ?>
         <?php include "aside.php"; ?>
     </main>
+    <?php include "footer.php"; ?>
+
 </body>
 
 </html>

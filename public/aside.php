@@ -16,15 +16,7 @@ $categories = $db->getAll("category");
     </div>
     <div class="aside__categories">
         <h1 class="aside__title"> <i class="fa-solid fa-folder"></i> KATEGORİLER</h1>
-        <ul class="categories__category-list">   
-                <a class="list__item" style="font-size: 1.3rem;" href="index.php">
-                    <i style="font-size: 1.5rem;" class="fas fa-home"></i>
-                        <?php if (!isset($_GET["categoryid"])) {
-                               echo "<b> Anasayfa </b>";
-                            }else{
-                               echo "Anasayfa";
-                            } ?>
-                </a>             
+        <ul class="categories__category-list">              
             <?php foreach($categories as $key => $category){?>                   
                 <a class="list__item" style="font-size: 1.3rem;" href="index.php?categoryid=<?php echo $category["id"] ?>">
                         <i style="font-size: 1.5rem;" class="<?php echo $category["icon"] ?>"></i>

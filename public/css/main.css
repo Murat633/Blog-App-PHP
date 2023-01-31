@@ -77,6 +77,13 @@
   justify-content: center;
   gap: 2rem; }
 
+.footer {
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: #000001;
+  color: #fff;
+  text-align: center; }
+
 .blog-posts {
   display: grid;
   grid-template-columns: repeat(3, 1fr) !important;
@@ -170,7 +177,7 @@
           background-color: #6F1AB6; }
 
 .header {
-  height: 50vh; }
+  height: 40vh; }
   .header__popular-posts {
     background-color: #333;
     height: 100%;
@@ -254,13 +261,11 @@
 
 .navbar {
   box-shadow: 0 0 10px 3px #000;
-  background: #fff;
   display: flex;
+  background: #1b263b;
   align-items: center;
   justify-content: space-between;
-  padding: .2rem 0;
-  margin-bottom: .3rem;
-  margin-bottom: 1rem; }
+  padding: .5rem 1rem; }
   .navbar .logo-box {
     font-size: 1.7rem;
     color: #fff;
@@ -270,18 +275,25 @@
     align-items: center;
     justify-content: center; }
     .navbar__links .links__item {
-      padding: 1rem 2rem;
+      padding: .5rem 3rem;
       position: relative;
       cursor: pointer;
       color: #fff; }
       .navbar__links .links__item.toggle.active {
-        background-color: #1b263b; }
+        background-color: #1b263b;
+        z-index: 999999;
+        width: 100%; }
         .navbar__links .links__item.toggle.active a {
-          color: #fff; }
+          color: #fff;
+          background-color: #1b263b;
+          text-align: center; }
+          .navbar__links .links__item.toggle.active a:hover {
+            color: #fff;
+            background-color: #1b263b; }
       .navbar__links .links__item:hover {
-        background-color: #1b263b; }
+        background-color: #fff; }
       .navbar__links .links__item:hover a {
-        color: #fff; }
+        color: #1b263b; }
       .navbar__links .links__item .item__link {
         color: #fff;
         font-weight: 900; }
