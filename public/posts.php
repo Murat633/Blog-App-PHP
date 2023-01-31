@@ -5,6 +5,7 @@ if(isset($_GET["categoryid"])){
 }else{
     $blogs = $db->getAll("blog");
 }
+
 $categories = $db->getAll("category");
 ?>
 

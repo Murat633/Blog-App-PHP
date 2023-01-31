@@ -5,8 +5,8 @@
 
 
 .blog-posts {
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
     font-family: 'Open Sans', cursive;
     gap: 1rem;
 
