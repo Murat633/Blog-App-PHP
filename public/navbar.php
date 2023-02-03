@@ -8,7 +8,7 @@ $categories = $db->getAll("category");
         <a href="index.php"><img width="70" src="<?php echo $settings["logo_path"] ?>" alt=""></a>
     </div>
     <ul class="navbar__links">
-        <li class="links__item"><a href="#" class="item__link">Anasayfa</a></li>
+        <li class="links__item"><a href="index.php" class="item__link">Anasayfa</a></li>
         <li class="links__item"><a href="#" class="item__link">Hakkımızda</a></li>
         <li class="links__item"><a href="#" class="item__link">Iletişim</a></li>
         <li class="links__item toggle">
